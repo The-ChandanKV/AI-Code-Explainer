@@ -1,12 +1,85 @@
-# React + Vite
+# AI Code Explainer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A powerful, offline-first web application that provides natural language explanations for code snippets in multiple programming languages.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎨 Sleek, developer-centric UI with dark theme
+- 💻 Support for multiple programming languages (Python, JavaScript, Java, C++)
+- 🔍 Line-by-line code explanations
+- 🌙 Dark theme with VS Code-like interface
+- 📝 Syntax highlighting for both code and explanations
+- 🔄 Real-time explanation generation
+- 💾 Offline operation with local ML models
+- 📊 Code complexity analysis
+- 📥 Export explanations as Markdown or PDF
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Frontend
+- React.js
+- Tailwind CSS
+- Monaco Editor
+- TypeScript
+
+### Backend
+- FastAPI
+- Transformers (HuggingFace)
+- PyTorch
+- ONNX Runtime
+
+## Setup
+
+### Prerequisites
+- Node.js (v16+)
+- Python (v3.8+)
+- pip
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/ai-code-explainer.git
+cd ai-code-explainer
+```
+
+2. Install frontend dependencies:
+```bash
+cd frontend
+npm install
+```
+
+3. Install backend dependencies:
+```bash
+cd ../backend
+pip install -r requirements.txt
+```
+
+4. Start the development servers:
+
+Frontend:
+```bash
+cd frontend
+npm run dev
+```
+
+Backend:
+```bash
+cd backend
+uvicorn main:app --reload
+```
+
+## Usage
+
+1. Open your browser and navigate to `http://localhost:3000`
+2. Paste your code or upload a file
+3. Select the programming language (or use auto-detect)
+4. Click "Explain" to get a detailed explanation
+5. Use the export options to save your explanation
+
+
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. 
